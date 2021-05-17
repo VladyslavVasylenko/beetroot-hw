@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+
+.text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  padding-bottom: 3%;
+}
+
+.subtext {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  padding-bottom: 1%;
+}
+
+.subtext:last-child {
+  padding-bottom: 10%;
+}
+
+.title-second {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #003cff;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.link:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  border: 1px solid #5eff00;
+  color: blue;
+}
+
+.link:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.conteiner {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(124, 252, 252, 0.575);
+}
+
+.conteiner-cards {
+  width: 800px;
+  height: 400px;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: burlywood;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+  width: 80%;
+  height: 80%;
+  background-image: url(../image/card-game-48980.svg);
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
