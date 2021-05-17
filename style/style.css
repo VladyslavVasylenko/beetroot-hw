@@ -105,5 +105,53 @@
   height: 80%;
   background-image: url(../image/card-game-48980.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
+  padding-left: 50px;
+  margin-left: 90px;
+}
+
+.card {
+  width: 230px;
+  height: 315px;
+  background-color: #fff;
+  border: solid 1px #000;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+  margin-top: -170px;
+  position: relative;
+  left: 250px;
+}
+
+.diamond-shape {
+  width: 30px;
+  height: 30px;
+  background: red;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 15px 0 0 15px;
+}
+
+.title-card {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150px;
+  position: relative;
+  top: 50px;
+  left: 320px;
+  z-index: 10;
+}
+
+.desk {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background-color: #fff;
+}
+
+.desk--hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

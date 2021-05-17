@@ -1,29 +1,44 @@
 "use strict";
 
-let cliks = 0;
+let clicks = 0;
 
-let noShowCards = '<p>We don`t have more cards</p>';
+let noShowCards = '<p class="desk">We don`t have more cards.</p>';
 
-let seeMoreCards = document.getElementById("see-More-Cards");
+let seeMoreCards = document.getElementById("cards");
 
-let suits = ["diamonds", "spades", "hearts", "clubs"];
+let suits = [
+  '<div class="card"><div class="diamond-shape"></div></div>', 
+  // "spades", 
+  // "hearts", 
+  // "clubs"
+];
 
-let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+let values = [
+  '<p class=title-card>A</p>', 
+  // "6", 
+  // "7", 
+  // "8", 
+  // "9", 
+  // "10", 
+  // "J", 
+  // "Q", 
+  // "K"
+];
 
-let setCard = suits.flatMap(suit => values.map(value => `${value} of ${suit}`));
+let setCard = suits.flatMap(suit => values.map(value => `${value} ${suit}` + '<br>'));
 
-//console.log(setCard);
+// let setCard = document.getElementsByClassName("card");
 
-function clickCards () {
-  if (clicks < 36) {
+seeMoreCards.onclick = function () {
+  if (clicks < 1) {
     let element = document.createElement('div');
     element.innerHTML = setCard;
-    see-More-Cards.appendChild(element);
+    cards.appendChild(element);
     clicks++;
   } else {
     let noCards = document.createElement('p');
     noCards.innerHTML = noShowCards;
-    see-More-Cards.appendChild(noImage);
-    seeMoreCards.classList.add('cards--hidden');
+    desk.appendChild(noCards);
+    seeMoreCards.classList.add('desk--hidden');
   }
 }
