@@ -118,7 +118,7 @@
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10%;
-  margin-top: -170px;
+  margin-top: -130px;
   position: relative;
   left: 250px;
 }
@@ -135,9 +135,9 @@
 
 .title-card {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 150px;
+  font-size: 120px;
   position: relative;
-  top: 50px;
+  top: 90px;
   left: 320px;
   z-index: 10;
 }

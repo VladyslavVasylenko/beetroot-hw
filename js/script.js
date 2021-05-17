@@ -15,14 +15,14 @@ let suits = [
 
 let values = [
   '<p class=title-card>A</p>', 
-  // "6", 
-  // "7", 
-  // "8", 
-  // "9", 
-  // "10", 
-  // "J", 
-  // "Q", 
-  // "K"
+  // '<p class=title-card>6</p>',
+  // '<p class=title-card>7</p>',
+  // '<p class=title-card>8</p>', 
+  // '<p class=title-card>9</p>', 
+  // '<p class=title-card>10</p>',
+  // '<p class=title-card>J</p>', 
+  // '<p class=title-card>Q</p>', 
+  // '<p class=title-card>K</p>',
 ];
 
 let setCard = suits.flatMap(suit => values.map(value => `${value} ${suit}` + '<br>'));
