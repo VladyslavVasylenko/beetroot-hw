@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.conteiner {
+  padding: 100px 50px 0px 50px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px 0px;
+      grid-template-areas: "big big sm2" "big big sm3" "sm4 sm5 sm6" "sm4 sm5 sm6";
+}
+
+.big {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: big;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sm2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sm2;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sm3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sm3;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sm4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: sm4;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sm5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: sm5;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sm6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: sm6;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.big:hover {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.sm2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sm3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sm4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sm5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sm6:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.conteiners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.big-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.fr {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sc {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.tr {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.fo {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.fv {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  width: 425px;
+  height: 425px;
+}
+
+.sx {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.sv {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.ey {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.fr:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sc:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.tr:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.fv:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sx:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sv:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ey:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */

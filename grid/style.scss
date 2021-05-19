@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.conteiner {
+  padding: 100px 50px 0px 50px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px 0px;
+  grid-template-areas:
+    "big big sm2"
+    "big big sm3"
+    "sm4 sm5 sm6"
+    "sm4 sm5 sm6";
+}
+
+.big { 
+  grid-area: big; 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.sm2 { 
+  grid-area: sm2; 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.sm3 { 
+  grid-area: sm3;
+  transition-duration: 1s;
+  transition-property: transform; 
+}
+
+.sm4 { 
+  grid-area: sm4; 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.sm5 { 
+  grid-area: sm5;
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.sm6 { 
+  grid-area: sm6; 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.big:hover {
+  transform: scale(0.5);
+} 
+.sm2:hover {
+  transform: scale(1.2);
+} 
+.sm3:hover {
+  transform: scale(1.2);
+} 
+.sm4:hover {
+  transform: scale(1.2);
+} 
+.sm5:hover {
+  transform: scale(1.2);
+} 
+.sm6:hover {
+  transform: scale(1.2);
+}
+
+.conteiners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow:hidden;
+}
+
+.big-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.fr { 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.sc {   
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.tr {   
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.fo {   
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.fv {   
+  transition-duration: 1s;
+  transition-property: transform;
+  width: 425px;
+  height: 425px;
+}
+.sx {    
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.sv {   
+  transition-duration: 1s;
+  transition-property: transform;
+}
+.ey { 
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+.fr:hover {
+  transform: scale(1.2);
+} 
+.sc:hover {
+  transform: scale(1.2);
+} 
+.tr:hover {
+  transform: scale(1.2);
+} 
+.fo:hover {
+  transform: scale(1.2);
+} 
+.fv:hover {
+  transform: scale(1.2);
+} 
+.sx:hover {
+  transform: scale(1.2);
+} 
+.sv:hover {
+  transform: scale(1.2);
+} 
+.ey:hover {
+  transform: scale(1.2);
+} 
